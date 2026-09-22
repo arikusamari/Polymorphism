@@ -50,4 +50,4 @@ print("Original Amount UGX :",payment.amount)
 print("Total amount UGX :",total_amount)
 
 
-#The __class__.__name__   Displays the name of the subclass chosen dynamically
+#The __class__.__name__   Displays the name of the subclass chosen by python during dynamic binding
