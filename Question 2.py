@@ -1,3 +1,4 @@
+#Importing abstractmethod module from abc
 from abc import ABC, abstractmethod
 
 
@@ -10,14 +11,16 @@ class Transport(ABC):
     def calculate_fare(self,distance):
         pass
         
-
+#Creating Taxi subclass
 class Taxi(Transport):
     def calculate_fare(self,distance):
         return (5000 + 2000 * distance)
-
+#Creating Bus subclass
 class Bus(Transport):
     def calculate_fare(self,distance):
         return (1000 * distance)
+        
+#Creating Motorcycle subclass
 class Motorcycle(Transport):
     def calculate_fare(self,distance):
         return (2000 + 1500 * distance)
@@ -51,4 +54,4 @@ print("Fare : UGX :",fare)
 #EXPLANATION BETWEEN DYNAMIC BINDING AND STATIC BINDING
 
 #Dynamic Binding means that the method that will execute is determined during execution time while Static
-# binding means the method to be executed is passed before program runs earlier during compile time
+# Binding means the method to be executed is passed before program runs earlier during compile time
